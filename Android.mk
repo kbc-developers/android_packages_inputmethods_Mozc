@@ -10,7 +10,8 @@ LOCAL_SRC_FILES := \
 LOCAL_PACKAGE_NAME := Mozc
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
-	mozc_guava mozc_jsr305 mozc_android-support-v13 mozc_protobuf
+	mozc_guava mozc_jsr305 mozc_android-support-v13 mozc_protobuf \
+	mozc_httpcore mozc_httpclient
 
 LOCAL_JNI_SHARED_LIBRARIES := libmozc
 
@@ -26,7 +27,9 @@ LOCAL_PREBUILT_STATIC_JAVA_LIBRARIES := \
     mozc_guava:libs/guava.jar \
     mozc_jsr305:libs/jsr305.jar \
     mozc_android-support-v13:libs/android-support-v13.jar \
-    mozc_protobuf:libs/protobuf.jar
+    mozc_protobuf:libs/protobuf.jar \
+    mozc_httpcore:libs/httpcore-4.4.3.jar \
+    mozc_httpclient:libs/httpclient-4.5.1.jar
 include $(BUILD_MULTI_PREBUILT)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
