@@ -164,6 +164,7 @@ public class JapaneseSoftwareKeyboardModel {
       switch (Preconditions.checkNotNull(layout)) {
         case GODAN:
         case QWERTY:
+		case QWERTY123:
         case TWELVE_KEYS:
           return Optional.of(KeyboardMode.NUMBER);
       }
