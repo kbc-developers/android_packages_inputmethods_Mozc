@@ -216,7 +216,7 @@ public class Keyboard {
     // QWERTY keyboard2.
     QWERTY123_KANA(
         new KeyboardSpecificationName("QWERTY123_KANA", 0, 1, 0),
-        R.xml.kbd_qwerty2_kana,
+        R.xml.kbd_qwerty123_kana,
         false,
         CompositionMode.HIRAGANA,
         SpecialRomanjiTable.QWERTY_MOBILE_TO_HIRAGANA,
@@ -226,7 +226,7 @@ public class Keyboard {
 
     QWERTY123_ALPHABET(
         new KeyboardSpecificationName("QWERTY123_ALPHABET", 0, 1, 0),
-        R.xml.kbd_qwerty2_abc,
+        R.xml.kbd_qwerty123_abc_123,
         false,
         CompositionMode.HALF_ASCII,
         SpecialRomanjiTable.QWERTY_MOBILE_TO_HALFWIDTHASCII,
@@ -236,7 +236,7 @@ public class Keyboard {
 
     QWERTY123_ALPHABET_NUMBER(
         new KeyboardSpecificationName("QWERTY123_ALPHABET_NUMBER", 0, 1, 0),
-        R.xml.kbd_qwerty2_abc_123,
+        R.xml.kbd_qwerty123_abc,
         false,
         CompositionMode.HALF_ASCII,
         SpecialRomanjiTable.QWERTY_MOBILE_TO_HALFWIDTHASCII,
