@@ -32,7 +32,7 @@ package org.mozc.android.inputmethod.japanese.preference;
 import org.mozc.android.inputmethod.japanese.MozcLog;
 import org.mozc.android.inputmethod.japanese.keyboard.Keyboard.KeyboardSpecification;
 import org.mozc.android.inputmethod.japanese.preference.ClientSidePreference.KeyboardLayout;
-import org.mozc.android.inputmethod.japanese.resources.R;
+import org.mozc.android.inputmethod.japanese.R;
 import org.mozc.android.inputmethod.japanese.view.Skin;
 import org.mozc.android.inputmethod.japanese.view.SkinType;
 import com.google.common.base.Preconditions;
@@ -187,6 +187,11 @@ public class KeyboardLayoutPreference extends Preference {
           KeyboardSpecification.QWERTY_KANA,
           R.string.pref_keyboard_layout_title_qwerty,
           R.string.pref_keyboard_layout_description_qwerty),
+      new Item(
+          KeyboardLayout.QWERTY123,
+          KeyboardSpecification.QWERTY123_KANA,
+          R.string.pref_keyboard_layout_title_qwerty123,
+          R.string.pref_keyboard_layout_description_qwerty123),
       new Item(
           KeyboardLayout.GODAN,
           KeyboardSpecification.GODAN_KANA,

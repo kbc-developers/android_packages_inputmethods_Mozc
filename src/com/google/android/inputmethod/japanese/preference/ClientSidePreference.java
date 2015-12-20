@@ -31,7 +31,7 @@ package org.mozc.android.inputmethod.japanese.preference;
 
 import org.mozc.android.inputmethod.japanese.ViewManagerInterface.LayoutAdjustment;
 import org.mozc.android.inputmethod.japanese.emoji.EmojiProviderType;
-import org.mozc.android.inputmethod.japanese.resources.R;
+import org.mozc.android.inputmethod.japanese.R;
 import org.mozc.android.inputmethod.japanese.view.SkinType;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Preconditions;
@@ -59,7 +59,10 @@ public class ClientSidePreference {
   public enum KeyboardLayout {
     TWELVE_KEYS(1),
     QWERTY(2),
-    GODAN(3),
+    QWERTY123(3),
+    GODAN(4),
+    
+
     ;
 
     // ID for usage stats.

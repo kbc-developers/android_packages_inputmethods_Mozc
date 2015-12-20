@@ -35,7 +35,7 @@ import org.mozc.android.inputmethod.japanese.protobuf.ProtoCommands.CompositionM
 import org.mozc.android.inputmethod.japanese.protobuf.ProtoCommands.Request.CrossingEdgeBehavior;
 import org.mozc.android.inputmethod.japanese.protobuf.ProtoCommands.Request.SpaceOnAlphanumeric;
 import org.mozc.android.inputmethod.japanese.protobuf.ProtoCommands.Request.SpecialRomanjiTable;
-import org.mozc.android.inputmethod.japanese.resources.R;
+import org.mozc.android.inputmethod.japanese.R;
 import com.google.common.base.Optional;
 import com.google.common.base.Preconditions;
 
@@ -212,6 +212,37 @@ public class Keyboard {
         SpaceOnAlphanumeric.COMMIT,
         false,
         CrossingEdgeBehavior.DO_NOTHING),
+
+    // QWERTY keyboard2.
+    QWERTY123_KANA(
+        new KeyboardSpecificationName("QWERTY123_KANA", 0, 1, 0),
+        R.xml.kbd_qwerty2_kana,
+        false,
+        CompositionMode.HIRAGANA,
+        SpecialRomanjiTable.QWERTY_MOBILE_TO_HIRAGANA,
+        SpaceOnAlphanumeric.SPACE_OR_CONVERT_KEEPING_COMPOSITION,
+        false,
+        CrossingEdgeBehavior.DO_NOTHING),
+
+    QWERTY123_ALPHABET(
+        new KeyboardSpecificationName("QWERTY123_ALPHABET", 0, 1, 0),
+        R.xml.kbd_qwerty2_abc,
+        false,
+        CompositionMode.HALF_ASCII,
+        SpecialRomanjiTable.QWERTY_MOBILE_TO_HALFWIDTHASCII,
+        SpaceOnAlphanumeric.COMMIT,
+        false,
+        CrossingEdgeBehavior.COMMIT_WITHOUT_CONSUMING),
+
+    QWERTY123_ALPHABET_NUMBER(
+        new KeyboardSpecificationName("QWERTY123_ALPHABET_NUMBER", 0, 1, 0),
+        R.xml.kbd_qwerty2_abc_123,
+        false,
+        CompositionMode.HALF_ASCII,
+        SpecialRomanjiTable.QWERTY_MOBILE_TO_HALFWIDTHASCII,
+        SpaceOnAlphanumeric.COMMIT,
+        false,
+        CrossingEdgeBehavior.COMMIT_WITHOUT_CONSUMING),
 
     ;
 
