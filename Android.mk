@@ -7,23 +7,17 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := \
         $(call all-java-files-under, src)
 
-library_dir := resources/res
-res_dir := $(library_dir) res
-LOCAL_RESOURCE_DIR := \
-        $(addprefix $(LOCAL_PATH)/, $(res_dir))
-
 LOCAL_PACKAGE_NAME := Mozc
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
 	mozc_guava mozc_jsr305 mozc_android-support-v13 mozc_protobuf \
-	mozc_httpcore mozc_httpclient mozc_android_resources
+	mozc_httpcore mozc_httpclient
 
 LOCAL_JNI_SHARED_LIBRARIES := libmozc
 
 LOCAL_PROGUARD_ENABLED := disabled
 
 #LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
-LOCAL_AAPT_FLAGS := --auto-add-overlay
 
 include $(BUILD_PACKAGE)
 
