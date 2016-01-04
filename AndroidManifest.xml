@@ -31,8 +31,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="org.mozc.android.inputmethod.japanese"
-          android:versionCode="6022862"
-          android:versionName="2.17.2286.103-arm">
+          android:versionCode="6022882"
+          android:versionName="2.17.2288.103-arm">
   <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="23" />
 
   <!-- Google Japanese Input (the main code) requires the following permissions. -->
